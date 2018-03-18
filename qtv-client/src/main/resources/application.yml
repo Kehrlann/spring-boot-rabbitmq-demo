@@ -1,0 +1,2 @@
+qtv.traffic.url: "http://localhost:8080/qtv"
+server.port: 8090

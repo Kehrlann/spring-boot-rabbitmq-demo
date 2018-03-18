@@ -1,0 +1,4 @@
+server.port: 8080
+traffic.jam.bouchons: "jams"
+traffic.jam.message: "Current traffic ${traffic.jam.bouchons} :"
+traffic.jam.sytadin: "http://www.sytadin.fr/refreshed/cumul_bouchon.jsp.html"

@@ -1,0 +1,13 @@
+applications:
+- name: traffic-service
+  memory: 512M
+  instances: 1
+  buildpack: java_buildpack
+  path: target/traffic-service-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_RABBITMQ_HOST: "192.168.11.1"
+    SPRING_RABBITMQ_USERNAME: username
+    SPRING_RABBITMQ_PASSWORD: password
+  routes:
+  - route: traffic.local.pcfdev.io
+  - route: backup.local.pcfdev.io
